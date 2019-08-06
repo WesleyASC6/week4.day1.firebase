@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>createBlog</title>
+
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js" ></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDKuZUIh4A32GUzkv8UaU2Ddlp-Py26Bvk",
+    authDomain: "blogging-website-ace12.firebaseapp.com",
+    databaseURL: "https://blogging-website-ace12.firebaseio.com",
+    projectId: "blogging-website-ace12",
+    storageBucket: "",
+    messagingSenderId: "396043905152",
+    appId: "1:396043905152:web:9ef4d9f69cb3d746"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+    <!--custom files-->
+    <script src="/firebase/createBlog/createBlog.js" defer ></script>
+  
+</head>
+<body>
+    <!--Add your name-->
+    <h1>Silent blog</h1>
+
+    <!--This div will be populated with messages-->
+    <div class="allMessages">
+        
+    </div>
+    <div class="userContainer">
+    <form>
+        <div class="inputContainer">
+             <div class="singleInput">
+                 <label for="username">Author:</label>
+                 <input id="username" type="text">
+             </div>
+             <div class="singleInput">
+                  <label for="message">Title:</label>
+                  <input id="message" type="text">
+            </div>
+              <div class="singleInput2">
+                  <label for="text">Text:</label>
+                   <input id="text" type="text">
+                </div>
+            </div>
+            <button id="submitButton">Submit</button>
+        </form>
+    </div>
+
+
+
+
+
+</body>
+</html>
